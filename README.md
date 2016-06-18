@@ -3,7 +3,7 @@ Simple React component to pick/select a number. Can be a price selector too, if 
 
 It's a way of forcing the user to choose a valid number, without using masks.
 
-##Demo
+##Screenshots
 
 ![Screehnshot 2](./demos/screenshot02.gif)
 
