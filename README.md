@@ -47,3 +47,27 @@ Don't forget to require/import `style.css` from `"react-number-picker/dist/style
 
 You can copy and customize this file. If you do some nice styling, please contribute to the project. The sass version is in the `src` folder of the package.
 
+##Props
+
+##### value
+
+A numeric value. Default is `0`.
+
+##### digits
+
+Specify the quantity of digits you want to user select, disregarding decimal part. Default is `1`.
+
+##### currency
+
+Currency to display. Default is `null` (doesn't show any).
+
+##### showDecimal
+
+Set to `true` if you want to the user to be able to select two decimal values. Default is `true`.
+
+#### decimalSeparator
+
+Specify the decimal separator (just visual, not internal). Default is `.`.
+
+
+
