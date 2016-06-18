@@ -1,0 +1,111 @@
+$wrapper_bg_color: #FAFAFA;
+$wrapper_border_color: #E0E0E0;
+$button_color: #ddd;
+$digit_color: #616161;
+$digit_font: Tahoma, Geneva, sans-serif;
+
+.NumberPicker__wrapper {
+	display: inline-block;
+	margin : 0;	
+	padding: 3px 10px;
+	border-radius: 10px;
+	background-color: $wrapper_bg_color;
+	border: 1px solid $wrapper_border_color;
+
+	background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12000000', endColorstr='#00000000',GradientType=0 );
+
+	&:after {
+		display: block;
+		content: '';
+		clear: both;
+	}
+
+}
+
+.NumberPicker__table {
+	display: table;
+}
+
+.NumberPicker__row {
+	display: table-row;
+}
+
+.NumberPicker__cell {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	min-width: 10px;
+	margin : 0;
+	padding: 0 5px 0 10px;
+}
+
+.NumberPicker__cell > span.digit {
+	font-family: $digit_font;
+	color: $digit_color;
+	font-size: 16pt;
+}
+
+.NumberPicker__cell.digit {
+
+}
+
+.NumberPicker__cell.decimal-separator {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.NumberPicker__cell.decimal-separator > span.decimal-separator {
+	font-family: $digit_font;
+	color: $digit_color;	
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+.NumberPicker__cell > span {
+	/* prevents selecting when double clicking */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */		
+}
+
+.NumberPicker__cell.currency > span.currency {
+	font-family: $digit_font;
+	color: $digit_color;	
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+
+.NumberPicker__cell.button.up {
+	padding-bottom: 5px;
+}
+
+.NumberPicker__cell.button.down {
+	padding-top: 5px;
+}
+
+.NumberPicker__cell.button > span {
+	cursor: pointer;
+}
+
+.NumberPicker__cell.button > span.up {
+	position: relative;
+	top: -10px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 5px 10px 5px;
+	border-color: transparent transparent $button_color transparent;
+}
+
+.NumberPicker__cell.button > span.down {
+	position: relative;
+	top: 10px;	
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 5px 0 5px;
+	border-color: $button_color transparent transparent transparent;
+}
