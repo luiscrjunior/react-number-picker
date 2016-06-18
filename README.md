@@ -53,7 +53,7 @@ You can copy and customize this file. If you do some nice styling, please contri
 
 ##### value
 
-A numeric value. Default is `0`.
+A numeric value. Default is `0`. Actually, it does not support negative numbers.
 
 ##### digits
 
@@ -75,7 +75,7 @@ Specify the decimal separator (just visual, not internal). Default is `.`.
 
 It's a very small project. Please feel free to contribute!
 
-## [License]
+##License
 
 [MIT Licensed](https://tldrlegal.com/license/mit-license)
 
