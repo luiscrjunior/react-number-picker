@@ -1,10 +1,10 @@
 {
   "name": "react-number-picker",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/react-number-picker.js",
   "keywords": [],
-  "author": "mrlew@gmail.com",
+  "author": "mrlewc@gmail.com",
   "license": "MIT",
   "scripts": {
     "build": "webpack"
