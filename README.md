@@ -3,6 +3,13 @@ Simple React component to pick/select a number. Can be a price selector too, if 
 
 It's a way of forcing the user to choose a valid number, without using masks.
 
+##Demo
+
+![Screehnshot 2](./demos/screenshot02.gif)
+
+![Screehnshot 1](./demos/screenshot01.gif)
+
+
 ##Install
 
 `npm install react-number-picker --save`
