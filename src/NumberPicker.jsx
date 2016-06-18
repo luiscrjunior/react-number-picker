@@ -150,7 +150,7 @@ NumberPicker.defaultProps = {
 	currency: null,
 	value: 0.00,
 	decimalSeparator: ".",
-	showDecimal: true
+	showDecimal: false
 };
 
 export default NumberPicker;

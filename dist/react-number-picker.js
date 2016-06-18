@@ -286,10 +286,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	NumberPicker.defaultProps = {
 		digits: 1,
-		currency: "$",
+		currency: null,
 		value: 0.00,
 		decimalSeparator: ".",
-		showDecimal: true
+		showDecimal: false
 	};
 
 	exports.default = NumberPicker;
