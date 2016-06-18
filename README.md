@@ -1,5 +1,7 @@
 # react-number-picker
-Simple React component to pick number or price (you can specify a currency to display).
+Simple React component to pick/select a number. Can be a price selector too, if you specify `currency`.
+
+It's a way of forcing the user to choose a valid number, without using masks.
 
 ##Install
 
@@ -69,5 +71,11 @@ Set to `true` if you want to the user to be able to select two decimal values. D
 
 Specify the decimal separator (just visual, not internal). Default is `.`.
 
+##Contributions
 
+It's a very small project. Please feel free to contribute!
+
+## [License]
+
+[MIT Licensed](https://tldrlegal.com/license/mit-license)
 
