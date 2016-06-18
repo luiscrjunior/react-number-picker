@@ -1,5 +1,7 @@
 # react-number-picker
-Simple React component to pick number or price (you can specify a currency to display).
+Simple React component to pick/select a number. Can be a price selector too, if you specify `currency`.
+
+It's a way of forcing the user to choose a valid number, without using masks.
 
 ##Install
 
@@ -46,4 +48,34 @@ ReactDOM.render(<Wrapper />, document.getElementById("app") );
 Don't forget to require/import `style.css` from `"react-number-picker/dist/style.css"`.
 
 You can copy and customize this file. If you do some nice styling, please contribute to the project. The sass version is in the `src` folder of the package.
+
+##Props
+
+##### value
+
+A numeric value. Default is `0`. Actually, it does not support negative numbers.
+
+##### digits
+
+Specify the quantity of digits you want to user select, disregarding decimal part. Default is `1`.
+
+##### currency
+
+Currency to display. Default is `null` (doesn't show any).
+
+##### showDecimal
+
+Set to `true` if you want to the user to be able to select two decimal values. Default is `true`.
+
+#### decimalSeparator
+
+Specify the decimal separator (just visual, not internal). Default is `.`.
+
+##Contributions
+
+It's a very small project. Please feel free to contribute!
+
+##License
+
+[MIT Licensed](https://tldrlegal.com/license/mit-license)
 
