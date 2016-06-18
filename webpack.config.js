@@ -2,6 +2,7 @@
 
 var autoprefixer = require("autoprefixer");
 var path = require("path");
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
 var config = {
@@ -20,7 +21,7 @@ var config = {
 	module: {
 		loaders: [
 			{ test: /\.jsx?$/, loader: "babel" },
-			{ test: /\.scss$/, loaders: ["style", "css", "postcss", "sass-loader"] }
+			{ test: /\.scss$/, loader: ExtractTextPlugin.extract("style", "css!postcss!sass") }
 		]
 	},	
 	postcss: function () {
@@ -29,7 +30,10 @@ var config = {
 	externals: {
 		"react": "react",
 		"react-dom": "react-dom"
-	}	    
+	},
+	plugins: [
+		new ExtractTextPlugin("style.css")
+	]
 };
 
 

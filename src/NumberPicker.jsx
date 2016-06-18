@@ -147,7 +147,7 @@ NumberPicker.propTypes = {
 
 NumberPicker.defaultProps = {
 	digits: 1,
-	currency: "$",
+	currency: null,
 	value: 0.00,
 	decimalSeparator: ".",
 	showDecimal: true
